@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Books Section</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .books-section {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .books-section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .book-card {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .book-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .book-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 5px;
+      transition: transform 0.4s ease;
+    }
+
+    .book-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .book-card h4 {
+      margin: 15px 0 10px;
+      color: #007BFF;
+    }
+
+    .book-card p {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="books-section">
+    <h2>Our Book Collection</h2>
+    <div class="book-grid">
+      
+      <div class="book-card">
+        <img src="https://images.blinkist.io/images/books/6706f12b748d0f000f138789/1_1/470.jpg" alt="Book 1">
+        <h4>The Journey of Leadership</h4>
+        <p>By Dana Maor, Hans-Werner Kaas, Kurt Strovink, Ramesh Srinivasan</p>
+      </div>
+
+      <div class="book-card">
+        <img src="https://mukundmohan.blog/wp-content/uploads/2023/06/1_pk9uzxch4ywrvrxy2-crwg.jpg" alt="Book 2">
+        <h4>The Psychology of Money</h4>
+        <p>By Morgan Housel</p>
+      </div>
+
+      <div class="book-card">
+        <img src="https://www.crossword.in/cdn/shop/files/hachette-india-books-default-title-the-48-laws-of-power-paperback-greene-robert-paperback-greene-robert-40372661453017_1.jpg?v=1745498611&width=1000" alt="Book 3">
+        <h4>The 48 Laws Of Power</h4>
+        <p>By Robert Greene</p>
+      </div>
+
+      <div class="book-card">
+        <img src="https://www.crossword.in/cdn/shop/files/crosswordonline-books-default-title-ikigai-japanese-secret-to-long-and-happy-life-hardcover-hector-garcia-francesc-miralles-40421959139545_1_1.webp?v=1745493042&width=1000" alt="Book 4">
+        <h4>Ikigai: Japanese secret to long and happy life</h4>
+        <p>By Hector Garcia</p>
+      </div>
+
+
+      <div class="book-card">
+        <img src="https://www.crossword.in/cdn/shop/files/manifest-bk0443208-44375852646617.jpg?v=1746614451&width=1000" alt="Book 5">
+        <h4>Manifest</h4>
+        <p>By Roxie Nafousi</p>
+      </div>
+
+
+    
+      <div class="book-card">
+        <img src="https://www.crossword.in/cdn/shop/products/crosswordonline-books-default-title-how-to-talk-to-anyone-92-little-tricks-for-big-success-in-relationships-paperback-leil-lowndes-40421962744025.jpg?v=1745700765" alt="Book 6">
+        <h4>How To Talk To Anyone</h4>
+        <p>By Leil Lowndes</p>
+      </div>
+
+
+      <div class="book-card">
+        <img src="https://www.crossword.in/cdn/shop/files/Atomic_Habits_1_1.webp?v=1745491776" alt="Book 7">
+        <h4>Atomic Habits </h4>
+        <p>By James Clear</p>
+      </div>
+
+
+      <div class="book-card">
+        <img src="https://www.crossword.in/cdn/shop/products/crosswordonline-books-default-title-the-alchemist-paperback-coelho-paulo-40421773967577.jpg?v=1745721373&width=1000" alt="Book 8">
+        <h4>The Alchemist</h4>
+        <p>By 	Paulo Coelho</p>
+      </div>
+
+
+      <div class="book-card">
+        <img src="https://www.crossword.in/cdn/shop/products/penguin-random-house-india-books-default-title-hidden-hindu-the-book-1-paperback-akshat-gupta-40372785250521.jpg?v=1746656284&width=1000" alt="Book 9">
+        <h4>Hidden Hindu</h4>
+        <p>By Akshat Gupta</p>
+      </div>
+
+      <div class="book-card">
+        <img src="https://www.crossword.in/cdn/shop/products/crosswordonline-books-default-title-harry-potter-and-the-philosopher-s-stone-j-k-rowling-40421717704921.jpg?v=1745732396&width=1000" alt="Book 10">
+        <h4>Harry Potter and the Philosopher's Stone J.K. Rowling</h4>
+        <p>By J. K. Rowling</p>
+      </div>
+
+      <div class="book-card">
+        <img src="https://www.crossword.in/cdn/shop/products/jujutsu-kaisen-vol-04-volume-4-paperback-akutami-gege-bk0457813-40532741325017.jpg?v=1746609668&width=1000" alt="Book 11">
+        <h4>Jujutsu Kaisen Vol. 04: Volume 4</h4>
+        <p>By Akutami Gege</p>
+      </div>
+
+      <div class="book-card">
+        <img src="https://www.crossword.in/cdn/shop/products/night-circus-the-paperback-erin-morgenstern-bk0022470-40493601751257.jpg?v=1746630725&width=1000" alt="Book 12">
+        <h4>Night Circus The [Paperback] Erin Morgenstern</h4>
+        <p>By Erin Morgenstern</p>
+      </div>
+
+
+      <div class="book-card">
+        <img src="https://www.crossword.in/cdn/shop/files/cristiano-ronaldo-paperback-balague-guillem-bk0501620-42856155939033.jpg?v=1746616273&width=1000" alt="Book 13">
+        <h4>Cristiano Ronaldo [Paperback] Balague Guillem</h4>
+        <p>By Balague Guillem</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
